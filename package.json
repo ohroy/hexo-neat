@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "bluebird": "^3.3.5",
-    "clean-css": "^2.9.x",
+    "clean-css": ">2.0.0",
     "html-minifier": "^2.1.2",
     "minimatch": "^3.0.0",
     "object-assign": "^4.1.0",
@@ -33,5 +33,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
