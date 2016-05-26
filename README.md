@@ -1,37 +1,34 @@
-# Hexo-all-minifier
-[![npm version](https://badge.fury.io/js/hexo-all-minifier.svg)](https://badge.fury.io/js/hexo-all-minifier)
-[![NPM Dependencies](https://david-dm.org/unhealthy/hexo-all-minifier.svg)](https://www.npmjs.com/package/hexo-all-minifier)
+# Hexo-neat
 
-All in one. Minifier & Optimization plugin for [Hexo](https://hexo.io).
-Since most of the optimize plugin for [HEXO](https://hexo.io) have been deprecated, and [HEXO](https://hexo.io) has upgraded to 3.XX, so I decide to implement this plugin.
+I want a profect page to show for my blog, so I made this.
+
+## Show
+[青枫浦](http://post.zz173.com)
 
 ## Installation
 ``` bash
-$ npm install hexo-all-minifier --save
+$ npm install hexo-neat --save
 ```
 
-## Components
-Integrate all the official minifier plugins of HEXO and a imagemin plugin:
-- [hexo-html-minifier](https://github.com/hexojs/hexo-html-minifier), which is based on [HTMLMinifier](https://github.com/kangax/html-minifier)
-- [hexo-clean-css](https://github.com/hexojs/hexo-clean-css), which is based on [clean-css](https://github.com/jakubpawlowicz/clean-css)
-- [hexo-uglify](https://github.com/hexojs/hexo-uglify), which is based on [UglifyJS](http://lisperator.net/uglifyjs/)
-- [hexo-imagemin](https://github.com/vseventer/hexo-imagemin), which is based on [imagemin](https://github.com/imagemin/imagemin)
-
-Thanks for their works.
 
 ## Options
+To Enable Auto neat , you must config like this:
 ``` yaml
-html_minifier:
+neat_enable: true
+```
+
+``` yaml
+neat_html:
   enable: true
   exclude: 
 ```
 - **enable** - Enable the plugin. Defaults to `true`.
 - **exclude**: Exclude files
-
+**Note:** there are so many params please see '[HTMLMinifier](https://github.com/kangax/html-minifier)'
 ----------
 
 ``` yaml
-css_minifier:
+neat_css:
   enable: true
   exclude: 
     - '*.min.css'
@@ -42,7 +39,7 @@ css_minifier:
 ----------
 
 ``` yaml
-js_minifier:
+neat_js:
   enable: true
   mangle: true
   output:
@@ -56,24 +53,9 @@ js_minifier:
 - **compress**: Compress options
 - **exclude**: Exclude files
 
-----------
 
-```yaml
-image_minifier:
-  enable: true
-  interlaced: false
-  multipass: false
-  optimizationLevel: 2
-  pngquant: false
-  progressive: false
-```
-- **enable** - Enable the plugin. Defaults to `true`.
-- **interlaced** - Interlace gif for progressive rendering. Defaults to `false`.
-- **multipass** - Optimize svg multiple times until it’s fully optimized. Defaults to `false`.
-- **optimizationLevel** - Select an optimization level between 0 and 7. Defaults to `2`.
-- **pngquant** - Enable [imagemin-pngquant](https://github.com/imagemin/imagemin-pngquant) plugin. Defaults to `false`.
-- **progressive** - Lossless conversion to progressive. Defaults to `false`.
-
-
-
-To be continued
+## Thanks
+Say Very Thanks for this gays:
+- neat html by [HTMLMinifier](https://github.com/kangax/html-minifier)
+- neat css  by [clean-css](https://github.com/jakubpawlowicz/clean-css)
+- neat js   by  [UglifyJS](http://lisperator.net/uglifyjs/)
