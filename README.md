@@ -1,3 +1,6 @@
+# status
+[![npm version](https://badge.fury.io/js/hexo-neat.svg)](https://badge.fury.io/js/hexo-neat)
+
 # Hexo-neat
 
 I want a profect page to show for my blog, so I made this.
@@ -20,7 +23,7 @@ neat_enable: true
 ``` yaml
 neat_html:
   enable: true
-  exclude: 
+  exclude:
 ```
 - **enable** - Enable the plugin. Defaults to `true`.
 - **exclude**: Exclude files
@@ -30,7 +33,7 @@ neat_html:
 ``` yaml
 neat_css:
   enable: true
-  exclude: 
+  exclude:
     - '*.min.css'
 ```
 - **enable** - Enable the plugin. Defaults to `true`.
@@ -44,7 +47,7 @@ neat_js:
   mangle: true
   output:
   compress:
-  exclude: 
+  exclude:
     - '*.min.js'
 ```
 - **enable** - Enable the plugin. Defaults to `true`.
