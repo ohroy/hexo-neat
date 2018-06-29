@@ -26,6 +26,7 @@ neat_html:
   exclude:
 ```
 - **enable** - Enable the plugin. Defaults to `true`.
+- **logger** - Print log switch. Defaults to `true`.
 - **exclude**: Exclude files
 **Note:** there are so many params please see '[HTMLMinifier](https://github.com/kangax/html-minifier)'
 ----------
@@ -37,6 +38,7 @@ neat_css:
     - '*.min.css'
 ```
 - **enable** - Enable the plugin. Defaults to `true`.
+- **logger** - Print log switch. Defaults to `true`.
 - **exclude**: Exclude files
 
 ----------
@@ -52,6 +54,7 @@ neat_js:
 ```
 - **enable** - Enable the plugin. Defaults to `true`.
 - **mangle**: Mangle file names
+- **logger** - Print log switch. Defaults to `true`.
 - **output**: Output options
 - **compress**: Compress options
 - **exclude**: Exclude files

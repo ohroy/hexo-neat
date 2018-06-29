@@ -6,6 +6,7 @@ var assign = require('object-assign');
         // HTML minifier
         hexo.config.neat_html = assign({
             enable: true,
+            logger: true,
             exclude: [],
             ignoreCustomComments: [/^\s*more/],
             removeComments: true,
@@ -20,6 +21,7 @@ var assign = require('object-assign');
         // Css minifier
         hexo.config.neat_css = assign({
             enable: true,
+            logger: true,
             exclude: ['*.min.css']
         }, hexo.config.neat_css);
 
@@ -27,6 +29,7 @@ var assign = require('object-assign');
         hexo.config.neat_js = assign({
             enable: true,
             mangle: true,
+            logger: true,
             output: {},
             compress: {},
             exclude: ['*.min.js']
