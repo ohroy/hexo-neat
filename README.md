@@ -3,10 +3,7 @@
 
 # Hexo-neat
 
-I want a profect page to show for my blog, so I made this.
-
-## Show
-[青枫浦](http://post.zz173.com)
+I want a perfect page to show for my blog, so I made this.
 
 ## Installation
 ``` bash
@@ -28,7 +25,7 @@ neat_html:
 - **enable** - Enable the plugin. Defaults to `true`.
 - **logger** - Print log switch. Defaults to `true`.
 - **exclude**: Exclude files
-**Note:** there are so many params please see '[HTMLMinifier](https://github.com/kangax/html-minifier)'
+- **Note:** there are so many params please see '[HTMLMinifier](https://github.com/kangax/html-minifier)'
 ----------
 
 ``` yaml
@@ -40,7 +37,7 @@ neat_css:
 - **enable** - Enable the plugin. Defaults to `true`.
 - **logger** - Print log switch. Defaults to `true`.
 - **exclude**: Exclude files
-
+- **Note:** there are so many params please see '[[clean-css](https://github.com/jakubpawlowicz/clean-css)'
 ----------
 
 ``` yaml
@@ -58,7 +55,7 @@ neat_js:
 - **output**: Output options
 - **compress**: Compress options
 - **exclude**: Exclude files
-
+- **Note:** there are so many params please see '[UglifyJS](http://lisperator.net/uglifyjs/)'
 
 ## Thanks
 Say Very Thanks for this gays:
