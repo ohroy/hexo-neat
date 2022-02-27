@@ -1,10 +1,9 @@
 /* global hexo */
-var assign = require('object-assign');
 
 //module.exports = function (hexo) {
     if (true === hexo.config.neat_enable) {
         // HTML minifier
-        hexo.config.neat_html = assign({
+        hexo.config.neat_html = Object.assign({
             enable: true,
             logger: true,
             exclude: [],
@@ -19,23 +18,22 @@ var assign = require('object-assign');
         }, hexo.config.neat_html);
 
         // Css minifier
-        hexo.config.neat_css = assign({
+        hexo.config.neat_css = Object.assign({
             enable: true,
             logger: true,
             exclude: ['*.min.css']
         }, hexo.config.neat_css);
 
         // Js minifier
-        hexo.config.neat_js = assign({
+        hexo.config.neat_js = Object.assign({
             enable: true,
             mangle: true,
             logger: true,
             output: {},
             compress: {},
-            exclude: ['*.min.js']
-        }, hexo.config.neat_js, {
-                fromString: true
-            });
+            exclude: ['*.min.js'],
+            warnings: true
+        }, hexo.config.neat_js);
 
 
         var filter = require('./lib/filter');
