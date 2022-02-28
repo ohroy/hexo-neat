@@ -7,13 +7,10 @@
     "url": "git@github.com:rozbo/hexo-neat.git"
   },
   "dependencies": {
-    "bluebird": "^3.7.2",
-    "clean-css": "^4.2.3",
+    "clean-css": "^5.2.4",
     "html-minifier": "^4.0.0",
-    "minimatch": "^3.0.4",
-    "object-assign": "^4.1.1",
-    "stream-to-array": "^2.3.0",
-    "uglify-js": "~3.10.0"
+    "minimatch": "^5.0.1",
+    "uglify-js": "^3.15.2"
   },
   "description": "auto Minify html、js、css and make it neat",
   "devDependencies": {},
