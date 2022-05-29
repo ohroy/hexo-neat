@@ -58,7 +58,7 @@ neat_js:
 - **Note:** there are so many params please see [UglifyJS](http://lisperator.net/uglifyjs/)
 
 ## Thanks
-Say Very Thanks for this gays:
+Say Very Thanks for this guys:
 - neat `html` by [HTMLMinifier](https://github.com/kangax/html-minifier)
 - neat `css`  by [clean-css](https://github.com/jakubpawlowicz/clean-css)
 - neat `js`   by  [UglifyJS](http://lisperator.net/uglifyjs/)
